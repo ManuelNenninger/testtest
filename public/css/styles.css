@@ -1,0 +1,111 @@
+/* Die Klassen card; l; m; und x; können aus dem HTML entfernt werden*/
+body {
+  font-family: 'Montserrat', sans-serif;
+  Font size: 15px;
+
+
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: hsl(232, 13%, 33%);
+  font-size: 55px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  color: hsl(233, 13%, 49%);
+}
+h5 {
+  margin-top: 20px;
+}
+label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  color: hsl(233, 13%, 49%);
+}
+
+.container.center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 55%;
+}
+.container.switchToggle {
+  text-align: center;
+  width: 30rem;
+  margin-bottom: 70px;
+}
+
+/* Anpassen des Toggle Switch */
+.form-check .form-check-input {
+  width: 4em;
+  float: none;
+  height: 2em;
+}
+/* Anpassen der Switchfarben im Checked / Unchecked Mode*/
+.form-check-input:checked {
+    background-color: hsl(237, 63%, 64%);
+    border-color: hsl(237, 63%, 64%);
+}
+.form-check-input:not(:checked) {
+    background-color: hsl(236, 72%, 79%);
+    border-color: hsl(236, 72%, 79%);
+}
+
+/* Card Component Allgemein*/
+.card {
+  text-align: center;
+}
+
+.card div {
+  border-top: 0.5px solid rgb(169, 169, 169);
+  border-bottom: 0.5px solid rgb(169, 169, 169);
+  padding: 1rem;
+}
+.col-sm{
+  padding-left: 0px;
+  padding-right: 0px;
+  border-top-left-radius: 0;
+}
+.card div:nth-child(2n) {
+  border: none;
+}
+/* Card Component Mitte speziell*/
+.row .col-sm:nth-child(2) .card h5 {
+    margin-top: 50px;
+    color: #fff;
+}
+.row .col-sm:nth-child(2) .card h1 {
+    margin-bottom: 50px;
+    color: #fff;
+}
+.row .col-sm:nth-child(2) .card p {
+  color: #fff;
+}
+
+.row .col-sm:nth-child(2) .card {
+  background: linear-gradient(40deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+/* Alle Div´s in der Klasse Card, des 2. col-sm Klasse in der Row-Klasse*/
+.row .col-sm:nth-child(2) .card  div {
+  border-top: 0.5px solid #fff;
+  border-bottom: 0.5px solid #fff;
+  padding: 1rem;
+}
+/* Jedes 2. Div in der Klasse Card, des 2. col-sm Klasse in der Row-Klasse*/
+.row .col-sm:nth-child(2) .card div:nth-child(2n) {
+  border: none;
+}
+
+/* Button Style allgemein*/
+.btn {
+  margin: 1rem;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}

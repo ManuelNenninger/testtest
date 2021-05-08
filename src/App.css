@@ -1,0 +1,31 @@
+body {
+  background-image: linear-gradient(190deg, #48B1C0, #EEF3F9);
+}
+
+.scroll-container {
+  position: relative;
+  height: calc(100vh - 64px);
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+
+}
+
+section {
+  height: calc(100vh - 64px);
+  scroll-snap-align: start;
+}
+
+section {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 90px;
+  font-weight: 700;
+  color: #3E5659;
+}
